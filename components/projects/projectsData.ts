@@ -14,7 +14,7 @@ export const projectsData: Project[] = [
     description: "TAAS, 시군구별 교통사고 등 성남시 빅데이터를 전처리한 후 독창적인 점수화 로직을 통해 성남시 내 최적의 스마트폴 위치를 도출한 프로젝트입니다.",
     tags: ["스마트시티", "빅데이터", "입지선정", "TAAS"],
     pdfURL: "/pdf/smartpole.pdf",
-    image: "/images/projects/smartpole.jpg",
+    image: "/images/projects/smartpole.JPG",
   },
   {
     id: "cheonan",
@@ -22,7 +22,7 @@ export const projectsData: Project[] = [
     description: "천안 역세권 혁신지구 도시재생사업의 의의와 실현 가능성을 분석하고 문제 해결 방향을 제시한 연구 프로젝트입니다.",
     tags: ["도시재생", "역세권", "사업성분석"],
     pdfURL: "/pdf/cheonan.pdf",
-    image: "/images/projects/cheonan.jpg",
+    image: "/images/projects/cheonan.JPG",
   },
   {
     id: "fastplan",
@@ -30,7 +30,7 @@ export const projectsData: Project[] = [
     description: "9·7 부동산대책과 신속통합기획을 비교 분석하여 현 부동산 정책에 대한 견해를 제시한 발표 프로젝트입니다.",
     tags: ["부동산정책", "신속통합기획", "정책비교", "9·7대책"],
     pdfURL: "/pdf/fastplan.pdf",
-    image: "/images/projects/fastplan.jpg",
+    image: "/images/projects/fastplan.JPG",
   },
   {
     id: "ktrust",
@@ -38,7 +38,7 @@ export const projectsData: Project[] = [
     description: "관리형 토지신탁을 분석하고 실제 등기소에서 '장안동 414-2' 신탁 원부를 발급받아 내용을 정리한 프로젝트입니다.",
     tags: ["토지신탁", "자산신탁", "관리형신탁"],
     pdfURL: "/pdf/ktrust.pdf",
-    image: "/images/projects/ktrust.jpg",
+    image: "/images/projects/ktrust.JPG",
   },
   {
     id: "contest",
@@ -46,7 +46,7 @@ export const projectsData: Project[] = [
     description: "교육기부 프로그램 공모전을 기획·진행하며 1차 심사부터 시상까지 운영하고, 최종 당선작은 실제 프로그램으로 디벨롭하여 운영한 프로젝트입니다.",
     tags: ["교육기부", "프로그램기획", "공모전"],
     pdfURL: "/pdf/contest.pdf",
-    image: "/images/projects/contest.jpg",
+    image: "/images/projects/contest.JPG",
   },
   {
     id: "sponsor",
