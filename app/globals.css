@@ -1,94 +1,98 @@
 @import "tailwindcss";
 @import "./safelist.css";
 
-/* Tailwind v4 테마 설정 */
+/* Tailwind v4 테마 설정 - 라이트 모드 */
 @theme {
-  --color-background: hsl(0 0% 100%);
-  --color-foreground: hsl(0 0% 3.9%);
+  /* 라이트 모드: 부드러운 화이트/그레이 톤 */
+  --color-background: hsl(0 0% 99%);
+  --color-foreground: hsl(0 0% 9%);
   --color-card: hsl(0 0% 100%);
-  --color-card-foreground: hsl(0 0% 3.9%);
+  --color-card-foreground: hsl(0 0% 9%);
   --color-popover: hsl(0 0% 100%);
-  --color-popover-foreground: hsl(0 0% 3.9%);
-  --color-primary: hsl(0 0% 9%);
-  --color-primary-foreground: hsl(0 0% 98%);
-  --color-secondary: hsl(0 0% 96.1%);
+  --color-popover-foreground: hsl(0 0% 9%);
+  --color-primary: hsl(220 70% 50%);
+  --color-primary-foreground: hsl(0 0% 100%);
+  --color-secondary: hsl(0 0% 96%);
   --color-secondary-foreground: hsl(0 0% 9%);
-  --color-muted: hsl(0 0% 96.1%);
-  --color-muted-foreground: hsl(0 0% 45.1%);
-  --color-accent: hsl(0 0% 96.1%);
+  --color-muted: hsl(0 0% 96%);
+  --color-muted-foreground: hsl(0 0% 45%);
+  --color-accent: hsl(0 0% 96%);
   --color-accent-foreground: hsl(0 0% 9%);
-  --color-destructive: hsl(0 84.2% 60.2%);
+  --color-destructive: hsl(0 84% 60%);
   --color-destructive-foreground: hsl(0 0% 98%);
-  --color-border: hsl(0 0% 89.8%);
-  --color-input: hsl(0 0% 89.8%);
-  --color-ring: hsl(0 0% 3.9%);
+  --color-border: hsl(0 0% 90%);
+  --color-input: hsl(0 0% 90%);
+  --color-ring: hsl(220 70% 50%);
   --radius: 0.5rem;
 }
 
-/* CSS 변수 (컴포넌트 호환성) */
+/* CSS 변수 - 라이트 모드 (컴포넌트 호환성) */
 :root {
-  --background: 0 0% 100%;
-  --foreground: 0 0% 3.9%;
+  --background: 0 0% 99%;
+  --foreground: 0 0% 9%;
   --card: 0 0% 100%;
-  --card-foreground: 0 0% 3.9%;
+  --card-foreground: 0 0% 9%;
   --popover: 0 0% 100%;
-  --popover-foreground: 0 0% 3.9%;
-  --primary: 0 0% 9%;
-  --primary-foreground: 0 0% 98%;
-  --secondary: 0 0% 96.1%;
+  --popover-foreground: 0 0% 9%;
+  --primary: 220 70% 50%;
+  --primary-foreground: 0 0% 100%;
+  --secondary: 0 0% 96%;
   --secondary-foreground: 0 0% 9%;
-  --muted: 0 0% 96.1%;
-  --muted-foreground: 0 0% 45.1%;
-  --accent: 0 0% 96.1%;
+  --muted: 0 0% 96%;
+  --muted-foreground: 0 0% 45%;
+  --accent: 0 0% 96%;
   --accent-foreground: 0 0% 9%;
-  --destructive: 0 84.2% 60.2%;
+  --destructive: 0 84% 60%;
   --destructive-foreground: 0 0% 98%;
-  --border: 0 0% 89.8%;
-  --input: 0 0% 89.8%;
-  --ring: 0 0% 3.9%;
+  --border: 0 0% 90%;
+  --input: 0 0% 90%;
+  --ring: 220 70% 50%;
   --radius: 0.5rem;
 }
 
+/* 다크 모드 - #0e0e0e, #111, #1a1a1a 계열 통일 */
 .dark {
-  --color-background: hsl(0 0% 3.9%);
-  --color-foreground: hsl(0 0% 98%);
-  --color-card: hsl(0 0% 3.9%);
-  --color-card-foreground: hsl(0 0% 98%);
-  --color-popover: hsl(0 0% 3.9%);
-  --color-popover-foreground: hsl(0 0% 98%);
-  --color-primary: hsl(0 0% 98%);
-  --color-primary-foreground: hsl(0 0% 9%);
-  --color-secondary: hsl(0 0% 14.9%);
-  --color-secondary-foreground: hsl(0 0% 98%);
-  --color-muted: hsl(0 0% 14.9%);
-  --color-muted-foreground: hsl(0 0% 63.9%);
-  --color-accent: hsl(0 0% 14.9%);
-  --color-accent-foreground: hsl(0 0% 98%);
-  --color-destructive: hsl(0 62.8% 30.6%);
+  /* 다크 모드 Tailwind v4 테마 오버라이드 */
+  --color-background: hsl(0 0% 5.5%);           /* #0e0e0e */
+  --color-foreground: hsl(0 0% 95%);            /* 밝은 텍스트 */
+  --color-card: hsl(0 0% 6.7%);                 /* #111111 */
+  --color-card-foreground: hsl(0 0% 95%);
+  --color-popover: hsl(0 0% 6.7%);              /* #111111 */
+  --color-popover-foreground: hsl(0 0% 95%);
+  --color-primary: hsl(220 70% 60%);            /* 밝은 블루 */
+  --color-primary-foreground: hsl(0 0% 100%);
+  --color-secondary: hsl(0 0% 10%);             /* #1a1a1a */
+  --color-secondary-foreground: hsl(0 0% 90%);
+  --color-muted: hsl(0 0% 10%);                 /* #1a1a1a */
+  --color-muted-foreground: hsl(0 0% 65%);
+  --color-accent: hsl(0 0% 13%);                /* 약간 밝은 다크 */
+  --color-accent-foreground: hsl(0 0% 95%);
+  --color-destructive: hsl(0 62% 50%);
   --color-destructive-foreground: hsl(0 0% 98%);
-  --color-border: hsl(0 0% 14.9%);
-  --color-input: hsl(0 0% 14.9%);
-  --color-ring: hsl(0 0% 83.1%);
+  --color-border: hsl(0 0% 18%);                /* 테두리 */
+  --color-input: hsl(0 0% 15%);
+  --color-ring: hsl(220 70% 60%);
   
-  --background: 0 0% 3.9%;
-  --foreground: 0 0% 98%;
-  --card: 0 0% 3.9%;
-  --card-foreground: 0 0% 98%;
-  --popover: 0 0% 3.9%;
-  --popover-foreground: 0 0% 98%;
-  --primary: 0 0% 98%;
-  --primary-foreground: 0 0% 9%;
-  --secondary: 0 0% 14.9%;
-  --secondary-foreground: 0 0% 98%;
-  --muted: 0 0% 14.9%;
-  --muted-foreground: 0 0% 63.9%;
-  --accent: 0 0% 14.9%;
-  --accent-foreground: 0 0% 98%;
-  --destructive: 0 62.8% 30.6%;
+  /* CSS 변수 호환성 */
+  --background: 0 0% 5.5%;
+  --foreground: 0 0% 95%;
+  --card: 0 0% 6.7%;
+  --card-foreground: 0 0% 95%;
+  --popover: 0 0% 6.7%;
+  --popover-foreground: 0 0% 95%;
+  --primary: 220 70% 60%;
+  --primary-foreground: 0 0% 100%;
+  --secondary: 0 0% 10%;
+  --secondary-foreground: 0 0% 90%;
+  --muted: 0 0% 10%;
+  --muted-foreground: 0 0% 65%;
+  --accent: 0 0% 13%;
+  --accent-foreground: 0 0% 95%;
+  --destructive: 0 62% 50%;
   --destructive-foreground: 0 0% 98%;
-  --border: 0 0% 14.9%;
-  --input: 0 0% 14.9%;
-  --ring: 0 0% 83.1%;
+  --border: 0 0% 18%;
+  --input: 0 0% 15%;
+  --ring: 220 70% 60%;
 }
 
 /* Pretendard 폰트 설정 */
@@ -98,27 +102,32 @@
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     text-rendering: optimizeLegibility;
-    word-break: keep-all; /* 한글 줄바꿈 최적화 */
+    word-break: keep-all;
     overflow-wrap: break-word;
   }
 }
 
-
 /* 모바일 우선 설정 */
 @layer base {
   * {
-    border-color: hsl(240 5.9% 90%);
+    border-color: hsl(var(--border));
   }
   
   html {
     @apply scroll-smooth;
-    font-size: 16px; /* 모바일 기본 폰트 크기 */
+    font-size: 16px;
   }
   
   body {
     @apply bg-background text-foreground;
     min-height: 100vh;
-    min-height: 100dvh; /* 모바일 뷰포트 대응 */
+    min-height: 100dvh;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  /* 다크모드 전환 시 부드러운 트랜지션 */
+  .dark body {
+    background-color: hsl(0 0% 5.5%);
   }
   
   /* 모바일 탭 대상 최소 크기 보장 */
@@ -133,6 +142,17 @@
     padding-left: env(safe-area-inset-left);
     padding-right: env(safe-area-inset-right);
     padding-bottom: env(safe-area-inset-bottom);
+  }
+}
+
+/* 스크롤바 숨김 */
+@layer utilities {
+  .scrollbar-hide {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none;
   }
 }
 
@@ -171,7 +191,6 @@
   }
 }
 
-
 /* 부드러운 그림자 */
 @layer utilities {
   .shadow-soft {
@@ -185,12 +204,87 @@
   .shadow-soft-xl {
     box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.05), 0 8px 10px -6px rgb(0 0 0 / 0.05);
   }
+  
+  /* 다크모드용 그림자 - 더 깊고 미묘한 효과 */
+  .dark .shadow-soft {
+    box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.5), 0 2px 4px -2px rgb(0 0 0 / 0.3);
+  }
+  
+  .dark .shadow-soft-lg {
+    box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.5), 0 4px 6px -4px rgb(0 0 0 / 0.3);
+  }
+  
+  .dark .shadow-soft-xl {
+    box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.6), 0 8px 10px -6px rgb(0 0 0 / 0.4);
+  }
+}
+
+/* 다크모드 기본 shadow 오버라이드 - 더 진한 그림자 */
+@layer utilities {
+  .dark .shadow-sm {
+    box-shadow: 0 1px 2px 0 rgb(0 0 0 / 0.4);
+  }
+  
+  .dark .shadow {
+    box-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.5), 0 1px 2px -1px rgb(0 0 0 / 0.4);
+  }
+  
+  .dark .shadow-md {
+    box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.5), 0 2px 4px -2px rgb(0 0 0 / 0.4);
+  }
+  
+  .dark .shadow-lg {
+    box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.5), 0 4px 6px -4px rgb(0 0 0 / 0.4);
+  }
+  
+  .dark .shadow-xl {
+    box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.5), 0 8px 10px -6px rgb(0 0 0 / 0.4);
+  }
+  
+  .dark .shadow-2xl {
+    box-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.6);
+  }
+}
+
+/* Hero 섹션 화살표 애니메이션 - 아래로 흘러가는 효과 */
+@layer utilities {
+  .animate-arrow-1 {
+    animation: arrowFlow 2s ease-in-out infinite;
+    animation-delay: 0s;
+  }
+  
+  .animate-arrow-2 {
+    animation: arrowFlow 2s ease-in-out infinite;
+    animation-delay: 0.4s;
+  }
+  
+  .animate-arrow-3 {
+    animation: arrowFlow 2s ease-in-out infinite;
+    animation-delay: 0.8s;
+  }
+}
+
+@keyframes arrowFlow {
+  0% {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  15% {
+    opacity: 1;
+  }
+  85% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
 }
 
 /* 애니메이션 */
 @layer utilities {
   .animate-in {
-    animation: fadeIn 0.5s ease-in-out;
+    animation: fadeIn 0.5s ease-out;
   }
   
   .animate-float {
@@ -226,5 +320,119 @@
   
   .min-h-screen {
     min-height: 100dvh;
+  }
+}
+
+/* 카드 및 컴포넌트 통일 스타일 */
+@layer components {
+  /* 다크모드 카드 스타일 */
+  .dark .card-dark {
+    background-color: hsl(0 0% 6.7%);
+    border-color: hsl(0 0% 18%);
+  }
+  
+  /* 다크모드 인풋 스타일 */
+  .dark input,
+  .dark textarea,
+  .dark select {
+    background-color: hsl(0 0% 10%);
+    border-color: hsl(0 0% 18%);
+    color: hsl(0 0% 95%);
+  }
+  
+  .dark input::placeholder,
+  .dark textarea::placeholder {
+    color: hsl(0 0% 50%);
+  }
+  
+  /* 다크모드 모달 오버레이 */
+  .dark .modal-overlay {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+}
+
+/* AOS 애니메이션 커스텀 스타일 */
+[data-aos] {
+  pointer-events: auto !important;
+}
+
+/* 스크롤바 커스텀 (다크모드 지원) */
+@layer utilities {
+  /* 라이트 모드 스크롤바 */
+  ::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: hsl(0 0% 96%);
+    border-radius: 4px;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: hsl(0 0% 70%);
+    border-radius: 4px;
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background: hsl(0 0% 60%);
+  }
+  
+  /* 다크 모드 스크롤바 */
+  .dark ::-webkit-scrollbar-track {
+    background: hsl(0 0% 10%);
+  }
+  
+  .dark ::-webkit-scrollbar-thumb {
+    background: hsl(0 0% 30%);
+  }
+  
+  .dark ::-webkit-scrollbar-thumb:hover {
+    background: hsl(0 0% 40%);
+  }
+
+  /* 별 떨어지는 애니메이션 (다크모드) */
+  @keyframes starFall {
+    0% {
+      transform: translateY(-100vh) translateX(0) rotate(45deg);
+      opacity: 0;
+    }
+    10% {
+      opacity: 1;
+    }
+    90% {
+      opacity: 1;
+    }
+    100% {
+      transform: translateY(100vh) translateX(100px) rotate(45deg);
+      opacity: 0;
+    }
+  }
+
+  .star-fall {
+    animation: starFall linear infinite;
+  }
+
+  .star-fall > div {
+    box-shadow: 
+      0 0 10px 2px rgba(255, 255, 255, 0.9),
+      0 0 20px 4px rgba(255, 255, 255, 0.6),
+      0 0 30px 6px rgba(255, 255, 255, 0.4);
+  }
+
+  /* 파티클 떠오르는 애니메이션 (라이트모드) */
+  @keyframes particleFloat {
+    0%, 100% {
+      transform: translateY(0) translateX(0) scale(1);
+      opacity: 0.3;
+    }
+    50% {
+      transform: translateY(-50px) translateX(30px) scale(1.2);
+      opacity: 0.6;
+    }
+  }
+
+  .particle-float {
+    animation: particleFloat ease-in-out infinite;
   }
 }

@@ -1,18 +1,14 @@
 import type React from "react"
 import type { Metadata } from "next"
 import { ThemeProvider } from "@/components/theme-provider"
-import { InlineEditorProvider } from "@/contexts/inline-editor-context"
-import { SiteTitle } from "@/components/site-title"
-import { getMetadata } from "@/lib/metadata"
+import { AOSProvider } from "@/components/aos-provider"
 import "./globals.css"
-
-const metadataInfo = getMetadata()
 
 export const metadata: Metadata = {
   metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || 'http://localhost:3000'),
-  title: metadataInfo.siteTitle,
-  description: metadataInfo.description,
-  keywords: ["포트폴리오", "개발자", "프론트엔드", "웹개발"],
+  title: "나의 포트폴리오",
+  description: "창의적인 아이디어로 웹 경험을 디자인합니다.",
+  keywords: ["포트폴리오", "개발자", "프론트엔드", "웹개발", "Next.js", "React"],
   authors: [{ name: "당신의 이름" }],
   openGraph: {
     type: "website",
@@ -23,7 +19,7 @@ export const metadata: Metadata = {
     siteName: "나의 포트폴리오",
     images: [
       {
-        url: "/api/og-image", // 동적 OG 이미지 API
+        url: "/api/og-image",
         width: 1200,
         height: 630,
         alt: "프로필 이미지",
@@ -63,21 +59,19 @@ export default function RootLayout({
           crossOrigin="anonymous"
           href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css" 
         />
-        {/* 카카오톡 공유 최적화 */}
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="630" />
       </head>
-      <body className="font-pretendard" suppressHydrationWarning>
+      <body className="font-pretendard antialiased" suppressHydrationWarning>
         <ThemeProvider 
           attribute="class" 
           defaultTheme="system" 
           enableSystem
-          disableTransitionOnChange
+          disableTransitionOnChange={false}
         >
-          <InlineEditorProvider>
-            <SiteTitle />
+          <AOSProvider>
             {children}
-          </InlineEditorProvider>
+          </AOSProvider>
         </ThemeProvider>
       </body>
     </html>
