@@ -41,12 +41,22 @@ export const projectsData: Project[] = [
     image: "/images/projects/ktrust.JPG",
   },
   {
-    id: "contest",
-    title: "대단원 공모전 교육기부 프로젝트 기획",
-    description: "교육기부 프로그램 공모전을 기획·진행하며 1차 심사부터 시상까지 운영하고, 최종 당선작은 실제 프로그램으로 디벨롭하여 운영한 프로젝트입니다.",
-    tags: ["교육기부", "프로그램기획", "공모전"],
-    pdfURL: "/pdf/contest.pdf",
-    image: "/images/projects/contest.JPG",
+    id: "flood-analysis",
+    title: "재난 취약 지역 분석(사당방배지구 침수를 중심으로)",
+    description:
+      "침수 대응을 중심으로 도시방재 및 정비사업의 현황을 분석하고 실효성 있는 방재계획과 기대효과를 도출한 프로젝트입니다.",
+    tags: ["도시방재", "풍수해 안전대책", "디지털 트윈 물관리 플랫폼"],
+    pdfURL: "/pdf/flood-analysis.pdf",
+    image: "/images/projects/flood-analysis.JPG",
+  },
+  {
+    id: "old-planned-city",
+    title: "노후계획도시 정비사업",
+    description:
+      "노후계획도시 특별법을 기반으로 노후 계획도시의 정비사업 구조와 한계를 분석하고 실효성 있는 도시재생 방향을 제시한 보고서입니다.",
+    tags: ["정비사업", "노후계획도시 특별법", "1기 신도시", "이주대책"],
+    pdfURL: "/pdf/old-planned-city.pdf",
+    image: "/images/projects/old-planned-city.JPG",
   },
   {
     id: "sponsor",
