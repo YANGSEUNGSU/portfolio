@@ -16,7 +16,7 @@ export const coreSkillsData: CoreSkill[] = [
     id: "project-management",
     title: "프로젝트 관리(PM) 역량",
     percent: 100,
-    description: "공모전 사업, 다양한 행사 기획 등 여러 프로젝트를 진행하며 일정 및 예산 관리 능력을 갖추었습니다.",
+    description: "다양한 행사 기획 등 여러 프로젝트를 진행하며 일정 및 예산 관리 능력을 갖추었습니다.",
   },
   {
     id: "communication",

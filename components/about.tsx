@@ -7,7 +7,7 @@ import { GraduationCap, Award, Sparkles, Globe } from "lucide-react"
 const experienceCards = [
   { icon: GraduationCap, title: "단국대학교 도시계획부동산학부", period: "2020 - 2026 (졸업예정)", description: "전공: 도시계획, 부동산 복수전공", color: "from-purple-500 to-pink-500" },
   { icon: Award, title: "도시계획기사 필기 합격", period: "2025", description: "실기 준비 예정 2026", color: "from-amber-500 to-orange-500" },
-  { icon: Globe, title: "어학연수 벤쿠버", period: "2009-2010", description: "OPIC IH 취득예정 2026", color: "from-indigo-500 to-blue-500" },
+  { icon: Globe, title: "LGCA, Windsor Secondary School 유학", period: "2009-2010", description: "", color: "from-indigo-500 to-blue-500" },
 ]
 
 
